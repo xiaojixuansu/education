@@ -1,0 +1,8 @@
+.el-menu-item:hover{
+background: #f8f5f9 !important;
+/*color: #ff0000 !important;*/
+}
+.el-submenu__title:hover{
+background: #f8f5f9 !important;
+color: #ff0000 !important;
+}
