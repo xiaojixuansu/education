@@ -1,8 +1,10 @@
 <template>
-  <el-row>
-    <el-carousel height="400">
+  <el-row style="height: 408px">
+    <el-carousel height="408px">
       <el-carousel-item v-for="(item,index) in img" :key="index">
-        <img :src="item.src" style="width: 100%;height: 100%;">
+        <div style="height: 100%;width: 100%;">
+          <img :src="item.src" style="width: 100%;height: 100%;">
+        </div>
       </el-carousel-item>
     </el-carousel>
   </el-row>

@@ -1,18 +1,18 @@
 <template>
   <el-row style="height: 260px;">
-    <el-col :span="8" style="padding-left: 0px;">
-      <img :src="settingData.img" style="width: 360px;height: 240px;">
+    <el-col :xs="8" :md="8" :lg="6" style="padding-left: 0px;">
+      <img :src="settingData.img" style="width: 100%;height: 240px;">
     </el-col>
-    <el-col :span="10">
+    <el-col :xs="10" :md="10" :lg="12">
       <el-card style="height: 240px;"  :body-style="{paddingTop:'0px',paddingRight:'0px'}">
         <div slot="header">
           <p class="title">{{settingData.abstract.title}}<span style="float: right;color: #929292;font-weight: normal">{{settingData.abstract.day}}</span></p>
         </div>
         <!--<p v-html="settingData.abstract.text" style="text-indent: 2em;"></p>-->
-        <div v-html="getHTML(settingData.abstract.text)" style="height: 200px;overflow: auto"></div>
+        <div v-html="getHTML(settingData.abstract.text)" style="height: 200px;overflow: auto;padding-right: 2em"></div>
       </el-card>
     </el-col>
-    <el-col :span="6">
+    <el-col :xs="6" :md="6" :lg="6">
       <div  style="border: 1px solid #e5e5e5e5;height: 240px;">
         <ul class="headline">
           <li v-for="item in settingData.list" :key="item.title">

@@ -2,7 +2,7 @@
   <el-row style="height: 580px;">
     <el-col :span="6">
       <h3 style="color: #6c2c7d;">常见问答</h3>
-      <el-card>
+      <el-card style="height: 444px">
         <img src="@/assets/index/question1.jpg" style="height: 100%;width: 100%">
         <ul class="question">
           <li><a>有什么班型？</a></li>
@@ -39,7 +39,7 @@
     </el-col>
     <el-col :span="6">
       <h3 style="color: #6c2c7d;">名师芸头条</h3>
-      <el-card>
+      <el-card style="height: 444px;">
         <img src="@/assets/index/index1.jpg" style="height: 100%;width: 100%;">
         <ul class="headline">
           <li v-for="item in headline" :key="item.text">
